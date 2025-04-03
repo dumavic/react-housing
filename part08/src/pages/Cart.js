@@ -1,4 +1,5 @@
 import './cart.css';
+import jacketImg from '../images/black-jacket.jpg'
 
 function Cart() {
     return(
@@ -8,7 +9,7 @@ function Cart() {
         <div class="cart-item">
             <div class="cart-info">
             <div class="cart-item-img">
-                <img src="../images/black-jacket.jpg" />
+                <img src={jacketImg} alt="black jacket" />
             </div>
                 <h2><a href="./jacket.html">JACKET</a></h2>
                 <p>Size: Large</p>

@@ -1,4 +1,5 @@
 import './navbar.css';
+import abaLogo from "../images/abalogo-resized.png";
 import { Outlet, Link } from 'react-router-dom';
 import Header from './Header';
 
@@ -37,7 +38,7 @@ function Navbar() {
             </nav>
             <nav class="nav-bar" id="logo" >
                 <a href="/">
-                <img src="./images/abalogo-resized.png" alt="aba logo resized"/>
+                <img src={abaLogo} alt="aba logo resized"/>
             </a>
             </nav>
             
