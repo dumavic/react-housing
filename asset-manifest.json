@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-housing/static/css/main.183d496b.css",
+    "main.js": "/react-housing/static/js/main.dbef4177.js",
+    "static/media/aba-banner.png": "/react-housing/static/media/aba-banner.93db5070e51d5f133dc5.png",
+    "static/media/abalogo-resized.png": "/react-housing/static/media/abalogo-resized.4d1962b38481c31fffc2.png",
+    "static/media/black-jacket.jpg": "/react-housing/static/media/black-jacket.b2ba2e092d183883807b.jpg",
+    "index.html": "/react-housing/index.html",
+    "main.183d496b.css.map": "/react-housing/static/css/main.183d496b.css.map",
+    "main.dbef4177.js.map": "/react-housing/static/js/main.dbef4177.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.183d496b.css",
+    "static/js/main.dbef4177.js"
+  ]
+}
