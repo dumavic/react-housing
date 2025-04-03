@@ -1,0 +1,168 @@
+/* Deal Alert Notification Top Bar */
+#deal-alert {
+  background: var(--black);
+  color: var(--white);
+  padding: .5% 0;
+  text-align: center;
+  font-weight: 800;
+}
+
+
+/* Hamburger */
+
+#hamburger div {
+    display: none;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  
+  /* Navigation */
+  .navigation {
+      display: flex;
+      justify-content: space-around;
+      background-color: #e0e0e0;
+  }
+  
+  .nav-bar ul {
+      display:  flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  
+  .nav-bar li {
+      display: flex;
+      margin: 0 1%;
+      padding: 1% 5%;
+  }
+  
+  .nav-bar a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--tinted-black);
+  }
+  
+  #left-nav {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+  #right-nav {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  /* navigation styling implemntation */
+
+#nav-mobile {
+  display: none;
+}
+
+.nav-bar ul li a {
+    position:relative;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+.nav-bar ul li a:hover {
+    color: var(--almost-white);
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: var(--dark-gray);
+  color: var(--almost-white);
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--tinted-black);
+  color: var(--white);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #002c50;
+}
+/* end of dropdown */
+  
+@media only screen and (max-width: 1020px) {
+/* Hamburger */
+
+#hamburger div {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--dark-gray);
+    margin: 5px 0;
+  }
+  
+  .navigation {
+    display: none;
+  }
+  
+  #nav-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--almost-white);
+  }
+  
+  #nav-mobile .nav-bar ul {
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
+  }
+  
+  #nav-mobile .nav-bar:hover {
+    color: var(--almost-white);
+  }
+  
+  #nav-mobile .nav-bar ul li:hover {
+    background-color: var(--pale-gray);
+  }
+  
+  #nav-mobile .nav-bar .show-hide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  }

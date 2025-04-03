@@ -1,16 +1,19 @@
-import './App.css';
+import './home.css'
 
-function App() {
-  return (
-    <div className="App">
+
+function Home(){
+    return (
+        <div>
         <section id="background-img-banner">
         <img src="./images/aba-banner.png" alt="aba banner" />
     </section>
 
     <section id="carousel">
+Hi
     </section>
-    </div>
-  );
-}
+        </div>
 
-export default App;
+    )
+  };
+  
+  export default Home;
