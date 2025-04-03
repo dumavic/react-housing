@@ -2,10 +2,6 @@
 footer {
     background-color: var(--tinted-black);
   }
-/* 
-  footer .footer-container {
-
-  } */
 
   footer .footer-container .footer-top {
     display: flex;
