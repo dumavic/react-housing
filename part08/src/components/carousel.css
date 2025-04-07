@@ -1,0 +1,40 @@
+#forward-arrow, #backward-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+}
+
+#forward-arrow {
+    right: 25%;
+}
+
+#backward-arrow {
+    left: 30%;
+}
+
+.hidden {
+    display:none;
+}
+
+  /* carousel part */
+  #carousel {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+  }
+
+  #carousel a {
+    margin: 0 3%;
+  }
+
+  #carousel #carousel-img p {
+    text-align: center;
+  }
+  
+  #carousel #carousel-img {
+    margin: auto;
+  }
+
+  #carousel #carousel-img img {
+    max-height: 20em;
+  }

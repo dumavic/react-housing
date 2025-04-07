@@ -1,6 +1,6 @@
 import './App.css';
-
 import abaBanner from "./images/aba-banner.png";
+import Carousel from "./components/carousel";
 
 function App() {
   return (
@@ -9,8 +9,7 @@ function App() {
         <img src={abaBanner} alt="aba banner" />
     </section>
 
-    <section id="carousel">
-    </section>
+    <Carousel />
     </div>
   );
 }
