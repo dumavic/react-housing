@@ -1,20 +1,32 @@
 import './navbar.css';
+import { useState } from 'react';
 import abaLogo from "../images/abalogo-resized.png";
 import { Outlet, Link } from 'react-router-dom';
 import Header from './Header';
 
-function Navbar() {
+const Navbar = () => {
+
+const [menuOpen, setMenuOpen] = useState(false);
+
+const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    console.log("menu open");
+    if (!menuOpen) {
+        document.getElementById("nav-toggle").classList.toggle('show-hide');
+    }
+    setMenuOpen(false);
+}
     return(
         <div>
         <header>
             <Header />
         <section id="nav-mobile">
-        <div id="hamburger">
+        <div id="hamburger" onClick={toggleMenu}>
             <div></div>
             <div></div>
             <div></div>
         </div>
-            <nav class="nav-bar">
+            <nav className="nav-bar">
             <ul id="nav-toggle">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/pages/shop">Shop</Link></li>
@@ -27,8 +39,8 @@ function Navbar() {
         </nav>
     </section> 
     {/* regular nav */}
-            <section class="navigation">
-                <nav class="nav-bar" id="left-nav">
+            <section className="navigation">
+                <nav className="nav-bar" id="left-nav">
                 <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/pages/shop">Shop</Link></li>
@@ -36,13 +48,13 @@ function Navbar() {
                 <li><Link to="/pages/about">About</Link></li>
                 </ul>
             </nav>
-            <nav class="nav-bar" id="logo" >
+            <nav className="nav-bar" id="logo" >
                 <a href="/">
                 <img src={abaLogo} alt="aba logo resized"/>
             </a>
             </nav>
             
-            <nav class="nav-bar" id="right-nav">
+            <nav className="nav-bar" id="right-nav">
                 <ul>
                 <li><Link to="/pages/login">Account</Link></li>
                 <li><Link to="/pages/cart">Cart</Link></li>
