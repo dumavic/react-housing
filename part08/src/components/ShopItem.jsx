@@ -8,8 +8,8 @@ return (
 <img src={shopItem.img_name} />
     </div>
     <div className='shop-item-info'>
-        <h2>{shopItem.item_name}</h2>
-        <p>Price: {shopItem.price}</p>
+        <h4>{shopItem.item_name}</h4>
+        <p>${shopItem.price}.00</p>
     </div>
 </section>
   );

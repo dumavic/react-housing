@@ -22,7 +22,7 @@ function Shop() {
     <div className="filter">
         <p>FILTER:</p>
         <div className="dropdown">
-            <button className="dropbtn">By Price</button>
+            <span className="dropbtn">By Price</span>
             <div className="dropdown-content">
             <a href="#">Lowest to Highest</a>
             <a href="#">Highest to Lowest</a>

@@ -8,9 +8,10 @@
     --black: #000000;
     --tinted-black: #222222;
     --dark-gray: #555555;
-    --almost-white: #eeeeee;
+    --almost-white: #f1f1f1;
     --white: #ffffff;
-    --pale-gray: #aaaaaa;
+    --pale-gray: #d1d1d1;
+    --bold-blue: #2853af;
 }
 
 body {

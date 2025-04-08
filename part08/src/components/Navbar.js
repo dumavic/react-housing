@@ -34,7 +34,7 @@ const toggleMenu = () => {
                 <li><Link to="/pages/about">About</Link></li>
                 <li><Link to="/pages/login">Account</Link></li>
                 <li><Link to="/pages/cart">Cart</Link></li>
-                <li><Link to="/pages/contact">Contact Us</Link></li>
+                <li><Link to="/pages/contact">Contact</Link></li>
             </ul>
         </nav>
     </section> 
@@ -58,7 +58,7 @@ const toggleMenu = () => {
                 <ul>
                 <li><Link to="/pages/login">Account</Link></li>
                 <li><Link to="/pages/cart">Cart</Link></li>
-                <li><Link to="/pages/contact">Contact Us</Link></li>
+                <li><Link to="/pages/contact">Contact</Link></li>
                 </ul>
             </nav>
         </section> 

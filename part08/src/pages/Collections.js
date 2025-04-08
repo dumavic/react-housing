@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './collections.css'
 import ShopItem from '../components/ShopItem';
 import axios from 'axios';
+import { Outlet, Link } from 'react-router-dom';
 
 const Collections = () => {
     const [shopItems, setShopItems] = useState([]);
@@ -20,7 +21,7 @@ const Collections = () => {
     <div className="filter">
         <p>FILTER:</p>
         <div className="dropdown">
-            <button className="dropbtn">By Price</button>
+            <span className="dropbtn">By Price</span>
             <div className="dropdown-content">
             <a href="#">Lowest to Highest</a>
             <a href="#">Highest to Lowest</a>
@@ -36,7 +37,9 @@ const Collections = () => {
         {shopItems.map((shopItem) => {
             const imgSrcName = `https://dumavic.github.io/projects/part6/images/${shopItem.img_name}`;
             if(shopItem.collectionType === "black") {
-                return <ShopItem img_name={imgSrcName} item_name={shopItem.item_name} price={shopItem.price} />
+                return <Link to={`/pages/${shopItem.item_page}`}>
+                <ShopItem img_name={imgSrcName} item_name={shopItem.item_name} price={shopItem.price} />
+                </Link>
             }        
             })}
     </div>
