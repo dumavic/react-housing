@@ -1,38 +1,10 @@
-  /* carousel part */
-  #carousel {
+  /* background image banner */
+  #background-img-banner {
     display: flex;
     justify-content: center;
-    margin: 2% 0;
+    margin: 2% 8%;
   }
-
-  #carousel a {
-    margin: 0 3%;
-  }
-
-  #carousel .carousel-img p {
-    text-align: center;
-  }
-  
-  #carousel .carousel-img {
-    margin: auto;
-  }
-
-  #carousel .carousel-img img {
-    max-height: 20em;
-  }
-
-  @media only screen and (max-width: 1020px) {
-    #carousel {
-      display: flex;
-      flex-direction: column;
-  
-    }
-    #carousel .carousel-img {
-      margin: 0 33%;
-    }
-  
-    #carousel .carousel-img img {
-      max-height: 20em;
-    }
-  
+  #background-img-banner img {
+    width: 100%;
+    max-height: 33em;
   }

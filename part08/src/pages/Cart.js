@@ -4,7 +4,6 @@ import jacketImg from '../images/black-jacket.jpg'
 function Cart() {
     return(
         <div>
-
             <section id="cart-container">
         <div class="cart-item">
             <div class="cart-info">

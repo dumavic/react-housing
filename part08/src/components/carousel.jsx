@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './carousel.css';
+import { Outlet, Link } from 'react-router-dom';
 
 const Carousel = () => {
     function importAll(r) {
@@ -26,11 +27,13 @@ const Carousel = () => {
 
     <section id="carousel">
         <div id="slideshow">
+            <Link to={`/pages/shirt`}>
             <div className='carousel-img'>
             <img src={images[index]} alt={images[index]} />
             </div>
             <p id="forward-arrow" onClick={slideFoward}>&gt;</p>
             <p id="backward-arrow" onClick={slideBackward}>&lt;</p>
+            </Link>
         </div>
     </section>
 

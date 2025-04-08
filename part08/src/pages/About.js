@@ -1,5 +1,5 @@
 import './about.css';
-
+import aboutImg from '../images/abagrouppic.jpg';
 function About() {
     return (
 <div>
@@ -7,7 +7,7 @@ function About() {
     <section id="about-container">
     <div id="about-container-top">
         <h1>About Us</h1>
-        <img src="../images/abagrouppic.jpg" />
+        <img src={aboutImg} />
     </div>
 
     <div id="about-container-bottom">

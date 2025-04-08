@@ -1,34 +1,18 @@
-import { useState } from 'react';
 import './shopitem.css';
 
-const ShopItem = () => {
-    function importAll(r) {
-        return r.keys().map(r);
-    }
+const ShopItem = (shopItem) => {
 
-    const images = importAll(
-        require.context("../images/slideshow", false, /\.(png|jpe?g|svg)$/)
-    );
-
-    const [index, setIndex] = useState(0);
-
-    const slideFoward = () => {
-        // if last image, set it at 0, then go next afterwards
-        setIndex(index === images.length - 1 ? 0 : index + 1);
-    }
-
-    const slideBackward = () => {
-        // if first image, set it at last image, then go backwards
-        setIndex(index === 0 ? images.length -1 : index - 1);
-    }
-
-  return (
-
-<section class="item-page-container">
-
+return (
+<section className='shop-item'>
+    <div className='shop-item-img'>
+<img src={shopItem.img_name} />
+    </div>
+    <div className='shop-item-info'>
+        <h2>{shopItem.item_name}</h2>
+        <p>Price: {shopItem.price}</p>
+    </div>
 </section>
-
   );
 }
 
-export default Carousel;
+export default ShopItem;
