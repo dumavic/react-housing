@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import ItemPage from './pages/ItemPage';
+import AccountPage from './pages/AccountPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
           <Route path="/pages/cart" element={<Cart />} />
           <Route path="/pages/contact" element={<Contact />} />
           <Route path="/pages/:name" element={<ItemPage />}/>
+          <Route path="/pages/account" element={<AccountPage />}/>
         
         </Route>
 

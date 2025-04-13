@@ -38,6 +38,7 @@ const ItemPage = () => {
           img_name={`https://dumavic.github.io/projects/part6/images/${item.img_name}`}
           item_name={item.item_name}
           price={item.price}
+          description={item.description}
         />
     </section>
   );

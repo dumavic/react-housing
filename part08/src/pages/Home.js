@@ -1,5 +1,6 @@
 import './home.css'
 import abaBanner from '../images/aba-banner.png'
+import Carousel from "../components/carousel";
 
 function Home(){
     return (
@@ -7,10 +8,7 @@ function Home(){
         <section id="background-img-banner">
         <img src={abaBanner} alt="aba banner" />
     </section>
-
-    <section id="carousel">
-Hi
-    </section>
+    <Carousel />
         </div>
 
     )

@@ -10,7 +10,6 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log("menu open");
     if (!menuOpen) {
         document.getElementById("nav-toggle").classList.toggle('show-hide');
     }

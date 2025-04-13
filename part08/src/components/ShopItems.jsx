@@ -62,7 +62,7 @@ return (
 
 <div className="item-description">
 <h4>Description</h4>
-<p>This is a Jacket that is designed based off of the Asian folklore of the koi and the dragon. The koi represents struggle and adversity, striving for greatness and one day turning into a dragon. The jacket is black with ABA origin story design on the back.</p>
+<p>{shopItem.description}</p>
 <ul>
     <li>100% Cotton</li>
     <li>Heavyweight</li>
